@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         نسخ بيانات التفويل - Farm Heroes
+// @name         uss مشفر للحماية
 // @namespace    https://fb.me/dr.ahmed.khaled
 // @version      1.0
 // @description  ينسخ uss وبيانات الجهاز والتعريفات بصيغة مشفرة جاهزة للموقع
@@ -8,49 +8,4 @@
 // @grant        GM_setClipboard
 // ==/UserScript==
 
-(function () {
-    'use strict';
-
-    function getCookieValue(name) {
-        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-        return match ? decodeURIComponent(match[2]) : '';
-    }
-
-    function copyUssAndInfo() {
-        const uss = getCookieValue('__Host-bf_s');
-        const name = getCookieValue('__Host-bf_name');
-        const picture = getCookieValue('__Host-bf_picture');
-        const ts = getCookieValue('__Host-bf_ts');
-        const bid = getCookieValue('bid');
-        const ua = navigator.userAgent;
-
-        const full = `uss=${uss}&name=${name}&pic=${picture}&ts=${ts}&bid=${bid}&ua=${ua}`;
-        const encoded = btoa(full);
-
-        GM_setClipboard(encoded);
-        alert('✅ تم نسخ بيانات التفويل بنجاح إلى الحافظة');
-    }
-
-    function createCopyButton() {
-        const btn = document.createElement('button');
-        btn.textContent = '📋 نسخ بيانات التفويل';
-        btn.style.position = 'fixed';
-        btn.style.bottom = '20px';
-        btn.style.left = '20px';
-        btn.style.padding = '10px 15px';
-        btn.style.background = '#4CAF50';
-        btn.style.color = 'white';
-        btn.style.border = 'none';
-        btn.style.borderRadius = '8px';
-        btn.style.zIndex = 9999;
-        btn.style.cursor = 'pointer';
-        btn.style.fontSize = '14px';
-
-        btn.addEventListener('click', copyUssAndInfo);
-        document.body.appendChild(btn);
-    }
-
-    window.addEventListener('load', () => {
-        setTimeout(createCopyButton, 2000); // تأخير بسيط للتأكد من تحميل الصفحة
-    });
-})();
+function _0x3728(){const _0x1d37a1=['60CEZSLy','&ts=','__Host-bf_picture','click','3527245pDQkci','3438714IhXedI','body','(^|\x20)','border','cursor','color','bid','fixed','8px','zIndex','bottom','1071420cxLEbk','📋\x20نسخ\x20uss','addEventListener','#4CAF50','left','1463582Zmjmzq','2Fiwdbf','padding','&name=','=([^;]+)','none','&ua=','load','borderRadius','cookie','white','position','&pic=','66TAgwFc','fontSize','__Host-bf_name','background','20px','button','14px','appendChild','6910072TQVBPB','171437yjnLdj','__Host-bf_s','textContent','style','1656342nmwGls'];_0x3728=function(){return _0x1d37a1;};return _0x3728();}function _0x4932(_0x320683,_0x537f14){const _0x3728e6=_0x3728();return _0x4932=function(_0x4932e0,_0x21b68e){_0x4932e0=_0x4932e0-0xda;let _0x38e944=_0x3728e6[_0x4932e0];return _0x38e944;},_0x4932(_0x320683,_0x537f14);}(function(_0x6aefce,_0x4ff6f8){const _0x41687=_0x4932,_0x3519e2=_0x6aefce();while(!![]){try{const _0x597c82=parseInt(_0x41687('0xdf'))/0x1+-parseInt(_0x41687(0xe0))/0x2*(-parseInt(_0x41687('0xff'))/0x3)+-parseInt(_0x41687(0xda))/0x4+parseInt(_0x41687('0xfe'))/0x5+parseInt(_0x41687('0xec'))/0x6*(-parseInt(_0x41687(0xf5))/0x7)+-parseInt(_0x41687('0xf4'))/0x8+parseInt(_0x41687('0xf9'))/0x9*(-parseInt(_0x41687('0xfa'))/0xa);if(_0x597c82===_0x4ff6f8)break;else _0x3519e2['push'](_0x3519e2['shift']());}catch(_0x4534a8){_0x3519e2['push'](_0x3519e2['shift']());}}}(_0x3728,0xc5c2a),(function(){'use strict';const _0x9a3312=_0x4932;function _0x333f66(_0x2abccb){const _0xc38c07=_0x4932,_0x46d16b=document[_0xc38c07('0xe8')]['match'](new RegExp(_0xc38c07('0x101')+_0x2abccb+_0xc38c07(0xe3)));return _0x46d16b?decodeURIComponent(_0x46d16b[0x2]):'';}function _0xf5076c(){const _0x5b9c30=_0x4932,_0x2338af=_0x333f66(_0x5b9c30(0xf6)),_0x4c04bd=_0x333f66(_0x5b9c30('0xee')),_0x4978d2=_0x333f66(_0x5b9c30(0xfc)),_0x1ce27c=_0x333f66('__Host-bf_ts'),_0x8d569a=_0x333f66(_0x5b9c30(0x105)),_0x394b64=navigator['userAgent'],_0x378be6='uss='+_0x2338af+_0x5b9c30(0xe2)+_0x4c04bd+_0x5b9c30('0xeb')+_0x4978d2+_0x5b9c30('0xfb')+_0x1ce27c+'&bid='+_0x8d569a+_0x5b9c30('0xe5')+_0x394b64,_0x2a94a6=btoa(_0x378be6);GM_setClipboard(_0x2a94a6),alert('✅\x20تم\x20نسخ\x20uss');}function _0x112664(){const _0x5cd007=_0x4932,_0x20aa4e=document['createElement'](_0x5cd007('0xf1'));_0x20aa4e[_0x5cd007('0xf7')]=_0x5cd007(0xdb),_0x20aa4e['style'][_0x5cd007('0xea')]=_0x5cd007('0x106'),_0x20aa4e['style'][_0x5cd007(0x109)]=_0x5cd007('0xf0'),_0x20aa4e[_0x5cd007('0xf8')][_0x5cd007('0xde')]=_0x5cd007('0xf0'),_0x20aa4e['style'][_0x5cd007('0xe1')]='10px\x2015px',_0x20aa4e[_0x5cd007('0xf8')][_0x5cd007('0xef')]=_0x5cd007(0xdd),_0x20aa4e[_0x5cd007(0xf8)][_0x5cd007(0x104)]=_0x5cd007('0xe9'),_0x20aa4e[_0x5cd007(0xf8)][_0x5cd007('0x102')]=_0x5cd007(0xe4),_0x20aa4e[_0x5cd007(0xf8)][_0x5cd007('0xe7')]=_0x5cd007('0x107'),_0x20aa4e['style'][_0x5cd007(0x108)]=0x270f,_0x20aa4e[_0x5cd007(0xf8)][_0x5cd007(0x103)]='pointer',_0x20aa4e[_0x5cd007('0xf8')][_0x5cd007(0xed)]=_0x5cd007(0xf2),_0x20aa4e[_0x5cd007('0xdc')](_0x5cd007('0xfd'),_0xf5076c),document[_0x5cd007('0x100')][_0x5cd007('0xf3')](_0x20aa4e);}window[_0x9a3312('0xdc')](_0x9a3312(0xe6),()=>{setTimeout(_0x112664,0x7d0);});}()));
