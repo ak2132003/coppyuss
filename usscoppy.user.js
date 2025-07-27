@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         نسخ بيانات التفويل - Farm Heroes
+// @name         نسخ uss مشفر تلقائيًا
 // @namespace    https://fb.me/dr.ahmed.khaled
 // @version      1.0
-// @description  ينسخ uss وبيانات الجهاز والتعريفات بصيغة مشفرة جاهزة للموقع
-// @author       أحمد خالد
+// @description  نسخ uss + fingerprint مشفر تلقائيًا
+// @author       Ahmed
 // @match        *://*.centurygames.com/*
 // @grant        GM_setClipboard
 // ==/UserScript==
